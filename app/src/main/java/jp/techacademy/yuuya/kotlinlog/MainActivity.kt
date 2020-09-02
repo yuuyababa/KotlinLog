@@ -9,8 +9,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val dog=Dog("ポチ", 3)
+        val man = Human("山田太郎", 21,"野球")
 
-        dog.move()
+        man.say()
+        man.think()
+
+        val woman =Human("山田サチ子",13,"家事" )
+        woman.say()
+        woman.think()
     }
 }
