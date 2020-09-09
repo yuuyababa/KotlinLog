@@ -3,7 +3,12 @@ package jp.techacademy.yuuya.kotlinlog
 import android.util.Log
 
 open class Human: Animal, Thinkable {
-     constructor(name: String, age: Int, hobby: String ):super(name,age,hobby){
+
+    var hobby: String =""
+    
+     constructor(name: String, age: Int, hobby: String ):super(name,age){
+
+         this.hobby = hobby;
      }
 
      override fun say() {
